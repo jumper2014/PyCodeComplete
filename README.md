@@ -8,3 +8,4 @@
 * switch_with_lambda.py: 用lambda模拟switch语句
 * chaining_comparison.py: 链式比较运算符
 * swap_variables.py: 快速交换变量的值
+* list_copy.py: 完全复制列表,而不是源列表的引用
