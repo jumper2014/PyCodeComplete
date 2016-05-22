@@ -1,4 +1,5 @@
 # python code works
+通过代码学习python, 提供可用的代码片段, 可用的python小工具.
 
 注: IDE是PyCharm, Python版本2.7.10
 
@@ -9,3 +10,4 @@
 * chaining_comparison.py: 链式比较运算符
 * swap_variables.py: 快速交换变量的值
 * list_copy.py: 完全复制列表,而不是源列表的引用
+* list_dict_set_comprehension.py: 列表推导,字典推导,集合推导
