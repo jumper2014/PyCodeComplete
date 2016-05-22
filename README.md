@@ -6,4 +6,4 @@
 * for_else.py: 用for else语句查找素数
 * if_else.py: 把if else写在同一行
 * switch_with_lambda.py: 用lambda模拟switch语句
- 
+* chaining_comparison.py: 链式比较运算符
