@@ -7,3 +7,4 @@
 * if_else.py: 把if else写在同一行
 * switch_with_lambda.py: 用lambda模拟switch语句
 * chaining_comparison.py: 链式比较运算符
+* swap_variables.py: 快速交换变量的值
