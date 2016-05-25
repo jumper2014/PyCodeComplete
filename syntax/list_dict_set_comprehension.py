@@ -1,6 +1,9 @@
+# coding=utf-8
+# 列表推导，字典推导，集合推导
+
 # list comprehension
 a = [1, 2, 3, 4, 5, 6]
-even_squares = [x**2 for x in a if x%2 == 0]
+even_squares = [x**2 for x in a if x % 2 == 0]
 print even_squares
 
 # dict comprehension
