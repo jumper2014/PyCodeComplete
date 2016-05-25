@@ -1,4 +1,6 @@
+# coding=utf-8
 # python support chaining comparison operators
+# 链式比较
 
 x = 5
 print 1 < x < 10
