@@ -12,3 +12,5 @@
 * list_copy.py: 完全复制列表,而不是源列表的引用
 * list_dict_set_comprehension.py: 列表推导,字典推导,集合推导
 * set_duplicate_intersection_difference: 查找列表中重复的元素，两个集合求交，求异
+* call_asterisk_param.py: 函数调用时，参数使用星号
+* double_asterisk_param.py: 函数定义和调用时用两个星号
