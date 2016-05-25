@@ -1,4 +1,5 @@
 # coding=utf-8
+# 查找列表中重复的元素，两个集合求交，两个集合求异
 
 # duplicate
 some_list = ['a', 'b', 'c', 'm', 'n', 'c']
