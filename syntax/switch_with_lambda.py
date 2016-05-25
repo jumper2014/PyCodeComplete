@@ -1,6 +1,8 @@
+# coding=utf-8
+# 使用lambda模拟switch
+
 # Python has no switch keyword
 # Here we simulate switch with lambda
-
 
 def a(s):
     print s
