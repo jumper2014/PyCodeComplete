@@ -18,9 +18,16 @@
 * set_duplicate_intersection_difference: 查找列表中重复的元素，两个集合求交，求异
 * call_asterisk_param.py: 函数调用时，参数使用星号
 * double_asterisk_param.py: 函数定义和调用时用两个星号
-* list_in_class: 类中的列表成员变量是所有对象共享
+* list_in_class.py: 类中的列表成员变量是所有对象共享
+* kwargs_param.py: 在使用kwargs参数中如果获得键值对
 
 ## 有用的模块
 * paramiko_download_file.py: 远程下载文件
 * paramiko_remote_exec.py: 远程执行命令
 * paramiko_upload_file.py: 远程上传文件
+
+## 装饰器
+* time_this.py: 记录函数执行时间的装饰器
+* log_it.py: 记录函数函数名和调用参数的装饰器
+
+## 内置模块和函数
