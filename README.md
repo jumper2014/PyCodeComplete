@@ -31,3 +31,8 @@
 * log_it.py: 记录函数函数名和调用参数的装饰器
 
 ## 内置模块和函数
+* is_a_string.py: 判断一个值是否为string
+* string_format.py: 用str.format格式化字符串
+* string_template.py: 用string.Template格式化字符串
+* ord_chr.py: 获得字符的ascii码值
+* find_in_index.py: 在字符串中查找字串
