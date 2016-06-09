@@ -36,6 +36,10 @@
 * string_template.py: 用string.Template格式化字符串
 * ord_chr.py: 获得字符的ascii码值
 * find_in_index.py: 在字符串中查找字串
+* difflib_data.py: 比较序列,特别是文本文件
+* stringio_and_cstringio.py: 使用file API来存取内存中的文本内容
+* pprint_data.py: 格式化打印
+
 
 ## 最佳实践 BKM
 * check_list_empty.py: 检查列表是否为空的最好方法
