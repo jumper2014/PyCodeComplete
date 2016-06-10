@@ -25,6 +25,7 @@
 * paramiko_download_file.py: 远程下载文件
 * paramiko_remote_exec.py: 远程执行命令
 * paramiko_upload_file.py: 远程上传文件
+* requests_sample.py: 易用的http网络库
 
 ## 装饰器
 * time_this.py: 记录函数执行时间的装饰器
@@ -39,6 +40,12 @@
 * difflib_data.py: 比较序列,特别是文本文件
 * stringio_and_cstringio.py: 使用file API来存取内存中的文本内容
 * pprint_data.py: 格式化打印
+* dir_copy.py: 复制文件夹
+* dir_delete.py: 删除文件夹
+* file_copy.py: 复制文件
+* file_rename.py: 文件重命名
+* file_archive.py: 文件压缩
+
 
 
 ## 最佳实践 BKM
