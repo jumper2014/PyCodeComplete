@@ -20,6 +20,10 @@
 * double_asterisk_param.py: 函数定义和调用时用两个星号
 * list_in_class.py: 类中的列表成员变量是所有对象共享
 * kwargs_param.py: 在使用kwargs参数中如果获得键值对
+* multi_exception_in_one_line.py: 一行里捕捉多个异常
+* static_var_of_class.py: 类的静态变量
+* range_vs_xrange.py: range和xrange的使用
+
 
 ## 有用的模块
 * paramiko_download_file.py: 远程下载文件
@@ -52,4 +56,11 @@
 * check_list_empty.py: 检查列表是否为空的最好方法
 * sort_dict.py: 对字典进行排序
 * global_var.py: 在函数中使用全局变量
+* split_list_to_chunk.py: 把列表分隔成同样大小的块
+* is_digit.py: 检查字符串是不是数字
+
+
+## 令人迷惑的语法
+* default_list_param.py: 变化的函数默认参数
+
 
