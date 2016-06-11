@@ -58,4 +58,7 @@ docs/_build/
 # PyBuilder
 target/
 
+# Backup files
+*.bak
+
 # Created by .ignore support plugin (hsz.mobi)

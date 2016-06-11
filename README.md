@@ -23,6 +23,13 @@
 * multi_exception_in_one_line.py: 一行里捕捉多个异常
 * static_var_of_class.py: 类的静态变量
 * range_vs_xrange.py: range和xrange的使用
+* list_and_generator.py: 用range生成list和generator
+* higher_order_function.py: 高阶函数
+# dir_function.py: dir()和__dir__()函数
+* eq_function.py: 函数__eq__()用于判断对象内容是否相等
+
+
+
 
 
 ## 有用的模块
