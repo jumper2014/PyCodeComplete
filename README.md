@@ -27,6 +27,9 @@
 * higher_order_function.py: 高阶函数
 # dir_function.py: dir()和__dir__()函数
 * eq_function.py: 函数__eq__()用于判断对象内容是否相等
+* underscore.py: 使用下划线忽略不关心的变量
+* infile_replace.py: 文本文件中替换字符串
+* dict_get.py: 访问字典中键值的两种方法
 
 
 
@@ -65,6 +68,7 @@
 * global_var.py: 在函数中使用全局变量
 * split_list_to_chunk.py: 把列表分隔成同样大小的块
 * is_digit.py: 检查字符串是不是数字
+* dict_viewitems.py: 求字典的交并差集合
 
 
 ## 令人迷惑的语法
