@@ -32,6 +32,13 @@
 * dict_get.py: 访问字典中键值的两种方法
 * exec_eval.py: exec和eval函数的用法
 * repr_sample.py: repr函数用来取得对象的规范字符串表示
+* apply_func.py: 展示如何使用apply函数
+* pass_func_as_param2.py: 将函数作为参数传入
+* func_return_func.py: 函数返回另一个函数
+* func_return_lambda.py: 返回lambda函数的函数
+* user_defined_exception.py: 用户自定义异常类
+* user_named_exception_class.py: 用户自定义的异常类
+
 
 
 
