@@ -30,6 +30,9 @@
 * underscore.py: 使用下划线忽略不关心的变量
 * infile_replace.py: 文本文件中替换字符串
 * dict_get.py: 访问字典中键值的两种方法
+* exec_eval.py: exec和eval函数的用法
+* repr_sample.py: repr函数用来取得对象的规范字符串表示
+
 
 
 
