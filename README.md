@@ -40,11 +40,6 @@
 * user_named_exception_class.py: 用户自定义的异常类
 
 
-
-
-
-
-
 ## 有用的模块
 * paramiko_download_file.py: 远程下载文件
 * paramiko_remote_exec.py: 远程执行命令
@@ -69,6 +64,7 @@
 * file_copy.py: 复制文件
 * file_rename.py: 文件重命名
 * file_archive.py: 文件压缩
+* clock_time.py: 计算CPU用时和间隔时间
 
 
 
@@ -79,6 +75,14 @@
 * split_list_to_chunk.py: 把列表分隔成同样大小的块
 * is_digit.py: 检查字符串是不是数字
 * dict_viewitems.py: 求字典的交并差集合
+* yesterday_tomorrow.py: 计算昨天和明天的日期
+* last_friday.py: 寻找上一个星期五
+* get_line_1.py: 根据指定的行号,从文本文件中读取一行数据
+* get_line_2.py: 根据指定的行号,从文本文件中读取一行数据
+* get_line_count_1.py: 计算文件行数
+* get_line_count_2.py: 计算文件行数
+
+
 
 
 ## 令人迷惑的语法
