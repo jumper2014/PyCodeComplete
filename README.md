@@ -38,6 +38,9 @@
 * func_return_lambda.py: 返回lambda函数的函数
 * user_defined_exception.py: 用户自定义异常类
 * user_named_exception_class.py: 用户自定义的异常类
+* enumerate_1.py: 循环访问序列中的元素和索引
+* named_slice.py: 命名切片
+* zip_reverse_dict.py: 使用zip反转字典
 
 
 ## 有用的模块
@@ -65,6 +68,9 @@
 * file_rename.py: 文件重命名
 * file_archive.py: 文件压缩
 * clock_time.py: 计算CPU用时和间隔时间
+* copy_1.py: # 返回具有同样内容和属性的对象的拷贝
+* copy_2.py: 深度拷贝,对象中的属性和内容被分别和递归地拷贝
+* min_max.py: 用heapq求最大最小元素
 
 
 
@@ -87,5 +93,6 @@
 
 ## 令人迷惑的语法
 * default_list_param.py: 变化的函数默认参数
+* defaultdict_tree.py: 用缺省字典表示简单的树
 
 
