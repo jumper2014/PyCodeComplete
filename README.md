@@ -48,6 +48,9 @@
 * paramiko_remote_exec.py: 远程执行命令
 * paramiko_upload_file.py: 远程上传文件
 * requests_sample.py: 易用的http网络库
+* download_sample.py: 下载文件并保存
+* tar_file.py: 压缩和解压*.tar.gz文件
+* zip_file.py: 压缩和解压*.zip文件
 
 ## 装饰器
 * time_this.py: 记录函数执行时间的装饰器
