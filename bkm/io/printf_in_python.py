@@ -4,7 +4,7 @@
 import sys
 
 
-def printf(format, *args):
-    sys.stdout.write(format % args)
+def printf(fmt, *args):
+    sys.stdout.write(fmt % args)
 
 printf("%d %s", 10*100, "python")

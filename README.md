@@ -22,6 +22,8 @@
 * 2d_array_exchange.py: 二维阵列变换
 * return_elem_for_index.py: 如果列表中存在指定索引,就返回该索引的元素
 * break_out_of_nested_loops.py: 从多重循环中退出
+* use_all_for_import.py: 显示有限的接口到外部
+* filter_sample.py: filter的用法
 
 
 ## 有用的命令行脚本 python_command

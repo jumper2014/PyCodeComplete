@@ -4,7 +4,7 @@
 for x in xrange(10):
     for y in xrange(10):
         for z in xrange(10):
-            print x,y,z
+            print x, y, z
             if x*y*z == 30:
                 break
         else:
