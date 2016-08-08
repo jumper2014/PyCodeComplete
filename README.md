@@ -24,6 +24,8 @@
 * break_out_of_nested_loops.py: 从多重循环中退出
 * use_all_for_import.py: 显示有限的接口到外部
 * filter_sample.py: filter的用法
+* __doc__sample.py: __doc__的用法
+* __iter__sample.py: __iter__ 方法会返回一个迭代器iterator
 
 
 ## 有用的命令行脚本 python_command
@@ -47,7 +49,7 @@
 * range_vs_xrange.py: range和xrange的使用
 * list_and_generator.py: 用range生成list和generator
 * higher_order_function.py: 高阶函数
-# dir_function.py: dir()和__dir__()函数
+* dir_function.py: dir()和__dir__()函数
 * eq_function.py: 函数__eq__()用于判断对象内容是否相等
 * underscore.py: 使用下划线忽略不关心的变量
 * infile_replace.py: 文本文件中替换字符串
@@ -74,6 +76,13 @@
 * download_sample.py: 下载文件并保存
 * tar_file.py: 压缩和解压*.tar.gz文件
 * zip_file.py: 压缩和解压*.zip文件
+* config_parser.py: 读取ini配置文件
+* csv_sample.py: 读写csv文件
+* decimal_sample.py: 十进制数学计算
+* openpyxl_read.py: 读取excel文件
+* openpyxl_write.py: 写入excel文件
+
+
 
 ## 装饰器 decorator
 * time_this.py: 记录函数执行时间的装饰器
@@ -98,6 +107,10 @@
 * copy_2.py: 深度拷贝,对象中的属性和内容被分别和递归地拷贝
 * min_max.py: 用heapq求最大最小元素
 * thread_pool.py: 一行代码实现多线程/多进程
+* defaultdict_sample.py: 演示使用defaultdict提供默认值
+* platform_sample.py: 获取系统平台信息
+* sys_args.py: 获取系统参数信息
+* random_sample.py: 随机函数
 
 
 
