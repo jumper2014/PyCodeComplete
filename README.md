@@ -4,13 +4,22 @@
 注: IDE是PyCharm, Python版本2.7.10  
 欢迎大家提交有用的python代码  
 
-## 最佳实践 BKM
-* check_list_empty.py: 检查列表是否为空的最好方法
-* sort_dict.py: 对字典进行排序
+## list
+* 检查列表是否为空的最好方法: check_list_empty.py 
+* 将字符串逐字或者逐词翻转: reverse_word.py
+
+## dict
+* 求字典的交并差集合: dict_viewitems.py
+* 对字典进行排序: sort_dict.py 
+
+## 类的语法
+* str()和repr()的区别: str_and_repr.py
+
+
 * global_var.py: 在函数中使用全局变量
 * split_list_to_chunk.py: 把列表分隔成同样大小的块
 * is_digit.py: 检查字符串是不是数字
-* dict_viewitems.py: 求字典的交并差集合
+
 * yesterday_tomorrow.py: 计算昨天和明天的日期
 * last_friday.py: 寻找上一个星期五
 * get_line_1.py: 根据指定的行号,从文本文件中读取一行数据
@@ -66,6 +75,8 @@
 * named_slice.py: 命名切片
 * zip_reverse_dict.py: 使用zip反转字典
 * merge_lists.py: 合并列表
+* inner_class.py: 内部类
+* dynamic_class.py: 根据参数动态生成类
 
 
 ## 有用的模块 modules
@@ -81,7 +92,7 @@
 * decimal_sample.py: 十进制数学计算
 * openpyxl_read.py: 读取excel文件
 * openpyxl_write.py: 写入excel文件
-
+* 线程池的例子: threadpool_sample.py
 
 
 ## 装饰器 decorator
@@ -117,11 +128,9 @@
 
 
 
-
-
-
 ## 令人迷惑的语法
 * default_list_param.py: 变化的函数默认参数
 * defaultdict_tree.py: 用缺省字典表示简单的树
+* class_static_var.py: 类静态变量
 
 
