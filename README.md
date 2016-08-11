@@ -93,7 +93,8 @@
 * openpyxl_read.py: 读取excel文件
 * openpyxl_write.py: 写入excel文件
 * 线程池的例子: threadpool_sample.py
-
+* 使用sysconfig: sysconfig_sample.py
+* 用etree读写xml： etree_sample.py
 
 ## 装饰器 decorator
 * time_this.py: 记录函数执行时间的装饰器
@@ -125,12 +126,11 @@
 
 
 
-
-
-
 ## 令人迷惑的语法
 * default_list_param.py: 变化的函数默认参数
 * defaultdict_tree.py: 用缺省字典表示简单的树
 * class_static_var.py: 类静态变量
 
-
+## BKM 
+* 获得hostname: get_host_name.py
+* 日期字符串：date_string.py
