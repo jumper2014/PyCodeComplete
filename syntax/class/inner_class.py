@@ -12,6 +12,7 @@
 # More readable, maintainable code: Nesting small classes within top-level classes places the code closer to where it is used.
 # The main advantage is organization. Anything that can be accomplished with inner classes can be accomplished without them.
 
+
 class Car(object):          # 外部类
     class Door(object):     # 内部类
         def open(self):
