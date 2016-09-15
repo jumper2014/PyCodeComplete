@@ -1,6 +1,7 @@
 # coding=utf-8
 # 判断一个值是否是字符串
 
+
 def is_a_string(obj):
     return isinstance(obj, basestring)
 
