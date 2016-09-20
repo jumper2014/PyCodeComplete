@@ -1,8 +1,6 @@
 # coding=utf-8
-__author__ = 'zengyuetian'
-
-
 import csv
+
 # write stocks data as comma-separated values
 writer = csv.writer(open('stock.csv', 'wb', buffering=0))
 writer.writerows([
