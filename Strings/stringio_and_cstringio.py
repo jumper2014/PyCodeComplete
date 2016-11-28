@@ -12,12 +12,12 @@ except:
 # Writing to a buffer
 output = StringIO()
 output.write('This goes into the buffer. ')
-print >>output, 'And so does this.'
+print >> output, 'And so does this.'
 
 # Retrieve the value written
 print output.getvalue()
 
-output.close() # discard buffer memory
+output.close()  # discard buffer memory
 
 # Initialize a read buffer
 input = StringIO('Inital value for read buffer')
