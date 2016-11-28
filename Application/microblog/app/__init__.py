@@ -1,5 +1,4 @@
 # coding=utf-8
-# author: Zeng YueTian
 
 from flask import Flask
 app = Flask(__name__)

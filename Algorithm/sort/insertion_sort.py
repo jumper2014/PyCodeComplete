@@ -1,5 +1,4 @@
 # coding=utf-8
-# author: Zeng YueTian
 
 """
 插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，

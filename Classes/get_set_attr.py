@@ -3,7 +3,6 @@
 __getattr__ 当特性被访问，且对象没有对应的特性时被自动调用
 __setattr__ 当试图给特性赋值的时候被自动调用
 
-__author__ = 'zengyuetian'
 
 """
 

@@ -1,6 +1,5 @@
 # coding=utf-8
 """
-__author__ = 'zengyuetian'
 __module__ = fake
 """
 

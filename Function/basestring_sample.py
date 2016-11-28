@@ -1,5 +1,4 @@
 # coding=utf-8
-# author: Zeng YueTian
 """
 basestring是str和unicode的超类（父类），也是抽象类，因此不能被调用和实例化，
 但可以被用来判断一个对象是否为str或者unicode的实例，isinstance(obj, basestring)等价于isinstance(obj, (str, unicode))；

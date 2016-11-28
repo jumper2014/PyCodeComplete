@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-# __author__ = 'yuetian'
 # 统计一个python文件库里面有多少个函数,关键字函数
 
 import os

@@ -1,5 +1,4 @@
 # coding=utf-8
-# author: Zeng YueTian
 
 from flask import render_template, flash, redirect
 from app import app

@@ -1,5 +1,4 @@
 # coding=utf-8
-# author: Zeng YueTian
 
 import qrcode
 import sys

@@ -2,7 +2,6 @@
 """
 __getattribute__, 当特性被访问时自动调用（只能在新式类中使用）
 
-__author__ = 'zengyuetian'
 
 """
 

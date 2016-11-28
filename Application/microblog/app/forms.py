@@ -1,5 +1,4 @@
 # coding=utf-8
-# author: Zeng YueTian
 
 from flask_wtf import FlaskForm
 # from flask.ext.wtf import FlaskForm

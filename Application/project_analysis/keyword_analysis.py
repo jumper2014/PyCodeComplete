@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-# __author__ = 'yuetian'
 # robot framework库关键字数量
 
 import os
