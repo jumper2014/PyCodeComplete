@@ -1,5 +1,12 @@
 # coding=utf-8
 
+import os
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
+SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+
 CSRT_ENABLE = True # 激活 跨站点请求伪造 保护
 SECRET_KEY = 'you-will-never-guess'
 
