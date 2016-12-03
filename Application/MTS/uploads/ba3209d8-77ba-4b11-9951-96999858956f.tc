@@ -1,0 +1,10 @@
+tap contacts
+tap fengyu
+tap message
+tap ui_emoji
+tap emoji_laugh
+tap emoji_laugh
+tap emoji_laugh
+tap send
+wait 5
+tap wechat

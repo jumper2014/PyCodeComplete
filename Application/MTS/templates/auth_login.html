@@ -1,0 +1,33 @@
+{% extends "main_visitor.html" %}
+
+
+{% block title %}
+    登陆
+{% end %}
+
+
+{% block body %}
+
+{% if error %}
+    <span style="color: red">Error: {{ error }}</span><p>
+{% end %}
+
+<div class="container">
+
+      <form class="form-signin" method="post" action="/auth/login">
+        <h2 class="form-signin-heading">请登陆</h2>
+        <label for="inputUser" class="sr-only">User Name</label>
+        <input type="user" id="inputUser" name="username" class="form-control" placeholder="用户名" required autofocus>
+        <label for="inputPassword" class="sr-only">密码</label>
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="密码" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> 记住我
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登陆</button>
+      </form>
+
+    </div> <!-- /container -->
+{% end %}
+

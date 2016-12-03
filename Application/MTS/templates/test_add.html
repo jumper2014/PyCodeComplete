@@ -1,0 +1,30 @@
+{% extends "main_user.html" %}
+
+
+{% block title %}
+    测试用例信息
+{% end %}
+
+
+{% block body %}
+    <div class="page-header">
+        <h2>请上传测试用例：</h2>
+    </div>
+    <div class="row">
+        <form enctype="multipart/form-data" action="/test/upload" method="post">
+            <h4>选择测试用例:</h4>
+            <br />
+            <br />
+            <input type="file" class="btn btn-default" name="filearg" />
+            <br />
+            <br />
+            <br />
+            <input type="text" class="form-control" name="caseid" placeholder="请输入用例名">
+            <br />
+            <br />
+            <br />
+            <input type="submit" class="btn btn-default" value="上传" />
+        </form>
+    </div>
+{% end %}
+
