@@ -1,0 +1,33 @@
+  <div class="page-header">
+        <h2>关于我们</h2>
+      </div>
+      <div class="well">
+        <p>人先科技是一家致力于balalal  ballalla Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+      </div>
+
+
+   <div class="page-header">
+        <h2>场馆信息</h2>
+      </div>
+      <div class="well">
+        <p>{{site}}</p>
+      </div>
+
+
+  <div class="page-header">
+        <h2>查询结果</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-offset-2 col-sm-8">
+          <ul class="list-group">
+              {% set count=0 %}
+              {% for result in results %}
+              {% set count=count+1 %}
+                <a href="/detail/{{count}}" class="list-group-item">场馆{{count}}, 位于{{result}} {{address}}</a>
+
+              {% end %}
+
+          </ul>
+        </div><!-- /.col-sm-4 -->
+
+      </div>

@@ -1,0 +1,14 @@
+<div class="testcase">
+    <h3 class="testcase_title">{{ site["title"] }}</h3>
+
+    <img src="{{ site["image"] }}" class="site_image"/>
+
+    <div class="site_details">
+        <div class="site_phone_number">联系方式: {{ site["phone"]}}</div>
+        <div class="site_address">
+            场馆地址: {{ site["address"]}}
+        </div>
+        <h5>详细信息:</h5>
+        <div class="site_body">{% raw site["description"] %}</div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+{% extends "main_user.html" %}
+
+
+
+{% block body %}
+    <div class="page-header">
+        <h2>您的测试用例如下：</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-11">
+          <ul class="list-group">
+              <p>用例ID | 用例脚本</p>
+              {% for tc in tcs %}
+
+                <p>{{tc["tc_id"]}}    |  {{tc["script_file"]}} </p>
+              {% end %}
+          </ul>
+        </div>
+
+
+
+    </div>
+{% end %}
+

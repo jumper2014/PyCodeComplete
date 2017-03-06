@@ -1,0 +1,74 @@
+{% extends "main_user.html" %}
+
+
+{% block title %}
+    运行测试
+{% end %}
+
+
+{% block body %}
+    <div class="page-header">
+        <h2>请创建测试：</h2>
+    </div>
+
+    <form enctype="multipart/form-data" action="/test/submit" method="post">
+    <div class="row">
+
+    <h3>请选择你的测试用例：</h3>
+    <input type="text" name="testcase" style="visibility:hidden" value="">
+        <input type="text" name="device" style="visibility:hidden" value="">
+
+    {% for tc in tcs %}
+        <div class="radio">
+        <label>
+            <input type="radio" name="inlineTestCaseRadioOptions" value="{{tc["tc_id"]}}">
+            {{tc["tc_id"]}}
+        </label>
+            </div>
+     {% end %}
+
+            <br />
+     <br />
+     <h3>请选择手机类型：</h3>
+    {% for device in devices %}
+        <div class="radio">
+        <label>
+            <input type="radio" name="inlineDeviceRadioOptions" value="{{device["os"]}} + {{device["mode"]}}">
+            {{device["os"]}} + {{device["mode"]}}
+        </label>
+            </div>
+     {% end %}
+
+
+     <br />
+     <br />
+     <br />
+     <div>
+        <input type="submit" onclick="doit()" value="提交任务" />
+     </div>
+
+    </div>
+    </form>
+    </div>
+
+    <script type="text/javascript">
+
+    // urgly implement, we need to improve it later
+    function doit(){
+        var tc = $("input[name='inlineTestCaseRadioOptions']:checked").val();
+        var d = $("input[name='inlineDeviceRadioOptions']:checked").val();
+        $("input[name='testcase']").val(tc);
+        $("input[name='device']").val(d);
+       // $.post("/test/submit",
+        //{
+          //  testcase:tc,
+            //device:d
+        //});
+    }
+    </script>
+
+
+{% end %}
+
+
+

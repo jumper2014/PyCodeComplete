@@ -1,0 +1,29 @@
+{% extends "main_visitor.html" %}
+
+
+{% block title %}
+    注册
+{% end %}
+
+
+{% block body %}
+
+{% if error %}
+    <span style="color: red">Error: {{ error }}</span><p>
+{% end %}
+
+<div class="container">
+
+      <form class="form-signin" method="post" action="/auth/create">
+        <h2 class="form-signin-heading">请注册</h2>
+        <label for="inputUser" class="sr-only">User Name</label>
+        <input type="user" id="inputUser" name="username" class="form-control" placeholder="用户名" required autofocus>
+        <label for="inputPassword" class="sr-only">密码</label>
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="密码" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
+      </form>
+
+    </div> <!-- /container -->
+{% end %}
+
