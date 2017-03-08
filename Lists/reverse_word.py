@@ -20,3 +20,9 @@ print ' '.join(strs)
 my_str = '123'
 print ''.join(reversed(my_str))  # reversed返回迭代器
 
+
+#方案四 list的pop方法
+#python3
+my_str = '123'
+for i in range(1,len(my_str)+1):
+    print(list(my_str).pop())
