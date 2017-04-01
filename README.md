@@ -3,6 +3,8 @@
 
 注: IDE是PyCharm, Python版本2.7.10  
 欢迎大家提交有用的python代码  
+欢迎大家提交python 3相关的代码片段
+请提交代码的同学加我QQ 1660513278，加好友时注明"github python"
 
 ## list
 * 检查列表是否为空的最好方法: check_list_empty.py 

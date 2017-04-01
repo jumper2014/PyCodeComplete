@@ -1,8 +1,6 @@
 # coding=utf-8
 # 将字符串逐字或者逐词翻转
 
-
-
 # 方案一  步长负一 实现翻转 最好的方法
 my_str = '123'
 print my_str
@@ -21,8 +19,8 @@ my_str = '123'
 print ''.join(reversed(my_str))  # reversed返回迭代器
 
 
-#方案四 list的pop方法
-#python3
+# 方案四 list的pop方法 来自penn201500
+# python3
 my_str = '123'
-for i in range(1,len(my_str)+1):
+for i in range(1, len(my_str)+1):
     print(list(my_str).pop())
