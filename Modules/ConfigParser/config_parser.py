@@ -3,7 +3,8 @@
 
 import ConfigParser
 
-def Parse(config_file_path):
+
+def parse(config_file_path):
     cf = ConfigParser.ConfigParser()
     cf.read(config_file_path)
 
@@ -20,8 +21,5 @@ def Parse(config_file_path):
     print db_host
 
 
-
-
-
 if __name__ == "__main__":
-    Parse("db_config.ini")
+    parse("db_config.ini")
