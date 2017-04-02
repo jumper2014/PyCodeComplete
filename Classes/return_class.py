@@ -1,5 +1,4 @@
 # coding=utf-8
-__author__ = 'zengyuetian'
 
 
 def choose_class(name):
