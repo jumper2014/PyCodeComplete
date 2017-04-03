@@ -73,7 +73,7 @@
 * func_return_lambda.py: 返回lambda函数的函数
 * user_defined_exception.py: 用户自定义异常类
 * user_named_exception_class.py: 用户自定义的异常类
-* enumerate_1.py: 循环访问序列中的元素和索引
+* enumerate.py: 循环访问序列中的元素和索引
 * named_slice.py: 命名切片
 * zip_reverse_dict.py: 使用zip反转字典
 * merge_lists.py: 合并列表
