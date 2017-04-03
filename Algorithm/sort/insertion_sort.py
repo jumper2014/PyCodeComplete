@@ -25,5 +25,5 @@ def insert_sort(lists):
 
 my_list = [1, 3, 77, 99, 22, 66, 75, 54]
 sorted_list = insert_sort(my_list)
-print sorted_list
+print(sorted_list)
 
