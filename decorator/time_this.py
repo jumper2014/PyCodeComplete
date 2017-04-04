@@ -4,12 +4,13 @@
 import time
 from functools import wraps
 
+
 def time_this(func):
-    '''
-    decorator that report the execution time
+    """
+    Decorator that report the execution time
     :param func: function
     :return: None
-    '''
+    """
     @wraps(func)
     def wrapper(*args, **kwargs):
         start = time.time()
@@ -18,6 +19,7 @@ def time_this(func):
         print(func.__name__, end-start)
         return result
     return wrapper
+
 
 @time_this
 def countdown(n):
