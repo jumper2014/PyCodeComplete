@@ -1,5 +1,5 @@
 # coding=utf-8
-__author__ = 'zengyuetian'
+# run via python 2.7
 
 """
 bytearray([source [, encoding [, errors]]])返回一个byte数组。Bytearray类型是一个可变的序列，并且序列中的元素的取值范围为 [0 ,255]。

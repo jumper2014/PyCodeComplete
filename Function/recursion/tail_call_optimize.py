@@ -37,7 +37,7 @@ def tail_call_optimized(g):
             while 1:
                 try:
                     return g(*args, **kwargs)
-                except TailRecurseException, e:
+                except TailRecurseException as e:
                     # 捕获异常, 拿到参数, 退出被修饰函数的递归调用栈
                     args = e.args
                     kwargs = e.kwargs
@@ -52,4 +52,4 @@ def factorial(n, acc=1):
         return acc
     return factorial(n-1, n*acc)
 
-print factorial(10000)
+print(factorial(10000))

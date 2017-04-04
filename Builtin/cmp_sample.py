@@ -1,6 +1,5 @@
 # coding=utf-8
-
-__author__ = 'zengyuetian'
+# run via python2.7
 
 """
 它的返回值只有三个，正数，0，负数，下面来看一下：
@@ -12,9 +11,9 @@ cmp(x, y)
 
 # -1, 0, 1
 
-print cmp(1, 2)
-print cmp(1, 1)
-print cmp(5, 2)
+print(cmp(1, 2))
+print(cmp(1, 1))
+print(cmp(5, 2))
 
 # #注意：这时候它会先比较第一个字符，然后比较第二个字符，逐个比较知道能判断出大小为止。
-print cmp('abcd', 'a')
+print(cmp('abcd', 'a'))
