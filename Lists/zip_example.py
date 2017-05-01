@@ -22,4 +22,11 @@ print(list(zip(b,a)))
 #[('java', 1), ('python', 2)]
 #[(1, 'java'), (2, 'python')]
 
+#在python3中才不能直接打印，python2中可以直接打印
+#另，在python3中，zip object是generator-like形式，只能遍历一次
+l1 = list(zip(a,b))
+print(l1)
+#结果为 [('java',1), ('python',2)]
+print(l1)
+#结果为 []
 
