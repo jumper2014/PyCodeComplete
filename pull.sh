@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ..
-for folder in zeus hera loki tapir thor breeze PyCodeComplete
+for folder in cherry zeus hera loki tapir thor breeze PyCodeComplete
         do
         	echo update $folder
         	cd $folder
