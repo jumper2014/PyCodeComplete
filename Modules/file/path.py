@@ -6,11 +6,11 @@ import sys
 
 def get_root_path():
     file_path = os.path.abspath(inspect.getfile(sys.modules[__name__]))
-    print file_path
+    print(file_path)
     parent_path = os.path.dirname(file_path)
     parent_path = os.path.dirname(parent_path)
     parent_path = os.path.dirname(parent_path)
-    print parent_path
+    print(parent_path)
     return parent_path
 
 
