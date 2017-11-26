@@ -1,4 +1,4 @@
-# python code works
+# python code samples
 通过代码学习python, 提供可用的代码片段, 可用的python小工具.
 
 注: IDE是PyCharm, Python版本2.7.10  
