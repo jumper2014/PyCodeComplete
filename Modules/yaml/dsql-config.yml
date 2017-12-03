@@ -1,0 +1,10 @@
+# config file of dsql
+DSQL:
+    HOME: /usr/localdsql
+    Hadoop:
+        HOME: /usr/localnhadoop
+        Server: 10.60.1.140
+        Client:
+            - 10.60.1.141
+            - 10.60.1.142
+            - 10.60.1.143
