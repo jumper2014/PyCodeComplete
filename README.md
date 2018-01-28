@@ -10,6 +10,7 @@ https://zhuanlan.zhihu.com/python2018
 请提交代码的同学加我QQ 1660513278，加好友时注明"github python"
 
 ## 索引
+- 使用paramiko远程登录免密码登录的机器：paramiko_with_key
 - 对字典进行排序: sort_dict.py 
 
 ## list
