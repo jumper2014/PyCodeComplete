@@ -9,13 +9,19 @@ https://zhuanlan.zhihu.com/python2018
 欢迎大家提交python 3相关的代码片段
 请提交代码的同学加我QQ 1660513278，加好友时注明"github python"
 
+## 索引
+- 使用Paramiko远程登录免密码登录的机器：paramiko_with_key.py
+- 对字典进行排序: sort_dict.py 
+- locals()和globals()函数: locals_globals.py
+- eval和全局局部名称空间: eval_globals_locals.py
+
 ## list
 * 检查列表是否为空的最好方法: check_list_empty.py 
 * 将字符串逐字或者逐词翻转: reverse_word.py
 
 ## dict
 * 求字典的交并差集合: dict_viewitems.py
-* 对字典进行排序: sort_dict.py 
+
 
 ## 类的语法
 * str()和repr()的区别: str_and_repr.py
