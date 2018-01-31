@@ -1,0 +1,6 @@
+age: 38
+children:
+- {age: 15, name: Jimmy Smith}
+- {age: 12, name: Jenny Smith}
+name: John Smith
+spouse: {age: 25, name: Jane Smith}
