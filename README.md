@@ -12,6 +12,7 @@ https://zhuanlan.zhihu.com/python2018
 - eval和全局局部名称空间: eval_globals_locals.py
 - eval把字符串转换成list, dict, tuple: eval_str.py
 - namedtuple: namedtuple_sample.py
+- 用不到 50 行的 Python 代码构建最小的区块链: simple_block_chain.py
 
 ## list
 * 检查列表是否为空的最好方法: check_list_empty.py 
