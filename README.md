@@ -15,6 +15,7 @@ https://zhuanlan.zhihu.com/python2018
 - 用不到 50 行的 Python 代码构建最小的区块链: simple_block_chain.py
 - 使用defaultdict提供默认值: defaultdict_sample.py, setdefault_sample.py
 - 统计列表项出现的次数：count_sample.py, counter_sample.py
+- 检查文件是否存在：file_dir_exists.py
 
 ## list
 * 检查列表是否为空的最好方法: check_list_empty.py 
