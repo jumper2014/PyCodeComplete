@@ -1,6 +1,7 @@
 ### 知乎专栏《Python实践之路》
 - https://zhuanlan.zhihu.com/python2018
 - 文章目录: docs
+- 代码目录: practice
 --------------------------------------
 
 通过代码学习python, 提供可用的代码片段, 可用的python小工具.
@@ -32,12 +33,9 @@
 
 ## 类的语法
 * str()和repr()的区别: str_and_repr.py
-
-
 * global_var.py: 在函数中使用全局变量
 * split_list_to_chunk.py: 把列表分隔成同样大小的块
 * is_digit.py: 检查字符串是不是数字
-
 * yesterday_tomorrow.py: 计算昨天和明天的日期
 * last_friday.py: 寻找上一个星期五
 * get_line_1.py: 根据指定的行号,从文本文件中读取一行数据
@@ -141,7 +139,6 @@
 * platform_sample.py: 获取系统平台信息
 * sys_args.py: 获取系统参数信息
 * random_sample.py: 随机函数
-
 
 
 ## 令人迷惑的语法
