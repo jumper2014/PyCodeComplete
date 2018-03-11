@@ -20,6 +20,7 @@
 - 线程池爬取B站：threadpool_sample.py
 - 元类解释：user_metaclass.py
 - 使用records第三方库操作MySQL：records_mysql.py
+- untangle将xml转换成python对象: untangle_xml.py
 
 ## list
 * 检查列表是否为空的最好方法: check_list_empty.py 
