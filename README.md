@@ -4,9 +4,6 @@
 - 代码目录: practice
 --------------------------------------
 
-通过代码学习python, 提供可用的代码片段, 可用的python小工具.
-
-
 ## 索引
 - 使用Paramiko远程登录免密码登录的机器：paramiko_with_key.py
 - 对字典进行排序: sort_dict.py 
@@ -22,6 +19,7 @@
 - 多线程爬取B站：thread_sample.py
 - 线程池爬取B站：threadpool_sample.py
 - 元类解释：user_metaclass.py
+- 使用records第三方库操作MySQL：records_mysql.py
 
 ## list
 * 检查列表是否为空的最好方法: check_list_empty.py 
