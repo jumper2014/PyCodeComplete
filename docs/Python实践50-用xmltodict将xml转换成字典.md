@@ -1,10 +1,24 @@
-#!/usr/bin/env python
-# coding=utf-8
+### 什么是xmltodict
+- xmltodict是另外一个用于处理xml的简易的Python库
+- xmltodict致力于将xml变得像json一样
+- xmltodict支持将xml转成字典或者转回xml
 
-import xmltodict
-
-if __name__ == '__main__':
-    # 将xml读出
+### 用代码说话
+假如我们的file.xml文件内容如下：
+```
+<mydocument has="an attribute">
+  <and>
+    <many>elements</many>
+    <many>more elements</many>
+  </and>
+  <plus a="complex">
+    element as well
+  </plus>
+</mydocument>
+```
+我们可以用如下的方式来解析该xml文件
+```
+# 将xml读出
     with open('file.xml') as fd:
         doc = xmltodict.parse(fd.read())
         print(doc['mydocument']['@has'])  # == u'an attribute'
@@ -26,3 +40,7 @@ if __name__ == '__main__':
         <?xml version="1.0" encoding="utf-8"?>
         <text stroke="2" color="red">This is a test</text>
         """
+```
+
+### 代码下载
+本文内容和代码已经归档到https://github.com/jumper2014/PyCodeComplete，欢迎star
