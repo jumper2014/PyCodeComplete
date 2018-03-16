@@ -1,10 +1,5 @@
 ### 知乎专栏《Python实践之路》
-- https://zhuanlan.zhihu.com/python2018
-- 文章目录: docs
-- 代码目录: practice
---------------------------------------
-
-## 索引
+- https://zhuanlan.zhihu.com/python2018, 文章目录:docs, 代码目录: practice
 - [Python实践1-Python自动化测试常用库整理](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B51-Python%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B8%B8%E7%94%A8%E5%BA%93%E6%95%B4%E7%90%86.md)
 - [Python实践2-用Paramiko实现互信主机间的文件传输](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B52-%E7%94%A8Paramiko%E5%AE%9E%E7%8E%B0%E4%BA%92%E4%BF%A1%E4%B8%BB%E6%9C%BA%E9%97%B4%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93.md)
 - [Python实践3-用Tenacity提高自动化测试工具的健壮性](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B53-%E7%94%A8Tenacity%E6%8F%90%E9%AB%98%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E7%9A%84%E5%81%A5%E5%A3%AE%E6%80%A7.md)
