@@ -1,0 +1,12 @@
+(i__main__
+User
+p0
+(dp1
+S'age'
+p2
+I20
+sS'name'
+p3
+S'Python'
+p4
+sb.
