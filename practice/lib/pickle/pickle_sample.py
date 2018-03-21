@@ -11,18 +11,18 @@ class User:
         self.age = age
 
     def show(self):
-        print self.name + "_" + str(self.age)
+        print(self.name + "_" + str(self.age))
 
 
 # 序列化到文件
 user = User("Python", 20)
 user.show()
-f = open('user.pkl', 'w')
+f = open('user.pkl', 'wb')
 pickle.dump(user, f)
 f.close()
 
 # 反序列化到内存
-f = open('user.pkl', 'r')
+f = open('user.pkl', 'rb')
 user1 = pickle.load(f)
 f.close()
 user1.show()
