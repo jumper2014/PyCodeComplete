@@ -51,6 +51,13 @@
 - [Python实践49-用untangle将xml解析成Python对象](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B549-%E7%94%A8untangle%E5%B0%86xml%E8%A7%A3%E6%9E%90%E6%88%90Python%E5%AF%B9%E8%B1%A1.md)
 - [Python实践50-用xmltodict将xml转换成字典](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B550-%E7%94%A8xmltodict%E5%B0%86xml%E8%BD%AC%E6%8D%A2%E6%88%90%E5%AD%97%E5%85%B8.md)
 - [Python实践51-特殊方法__getattr__和__getattribute__](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B551-%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95__getattr__%E5%92%8C__getattribute__.md)
+- [Python实践52-JSON序列化](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B552-JSON%E5%BA%8F%E5%88%97%E5%8C%96.md)
+- [Python实践53-内置json模块和simplejson](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B553-%E5%86%85%E7%BD%AEjson%E6%A8%A1%E5%9D%97%E5%92%8Csimplejson.md)
+- [Python实践54-又一个json第三方库demjson](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B554-%E5%8F%88%E4%B8%80%E4%B8%AAjson%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93demjson.md)
+- [Python实践55-pickle序列化](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B555-pickle%E5%BA%8F%E5%88%97%E5%8C%96.md)
+- [Python实践56-使用装饰器为你的函数计时](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B556-%E4%BD%BF%E7%94%A8%E8%A3%85%E9%A5%B0%E5%99%A8%E4%B8%BA%E4%BD%A0%E7%9A%84%E5%87%BD%E6%95%B0%E8%AE%A1%E6%97%B6.md)
+- [Python实践57-用timeit模块计时](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B557-%E7%94%A8timeit%E6%A8%A1%E5%9D%97%E8%AE%A1%E6%97%B6.md)
+
 
 
 ### 代码
