@@ -57,7 +57,12 @@
 - [Python实践55-pickle序列化](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B555-pickle%E5%BA%8F%E5%88%97%E5%8C%96.md)
 - [Python实践56-使用装饰器为你的函数计时](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B556-%E4%BD%BF%E7%94%A8%E8%A3%85%E9%A5%B0%E5%99%A8%E4%B8%BA%E4%BD%A0%E7%9A%84%E5%87%BD%E6%95%B0%E8%AE%A1%E6%97%B6.md)
 - [Python实践57-用timeit模块计时](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B557-%E7%94%A8timeit%E6%A8%A1%E5%9D%97%E8%AE%A1%E6%97%B6.md)
-
+- [Python实践58-性能调优之cProfile](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B558-%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E4%B9%8BcProfile.md)
+- [Python实践59-性能调优之代码里面调用cProfile](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B559-%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E4%B9%8B%E4%BB%A3%E7%A0%81%E9%87%8C%E9%9D%A2%E8%B0%83%E7%94%A8cProfile.md)
+- [Python实践60-性能调优之pstats模块](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B560-%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E4%B9%8Bpstats%E6%A8%A1%E5%9D%97.md)
+- [Python实践61-configparser模块简介](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B561-configparser%E6%A8%A1%E5%9D%97%E7%AE%80%E4%BB%8B.md)
+- [Python实践62-列表切片知识点1](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B562-%E5%88%97%E8%A1%A8%E5%88%87%E7%89%87%E7%9F%A5%E8%AF%86%E7%82%B91.md)
+- [Python实践63-为什么不建议切片时同时指定start, end和stride](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B563-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%BB%BA%E8%AE%AE%E5%88%87%E7%89%87%E6%97%B6%E5%90%8C%E6%97%B6%E6%8C%87%E5%AE%9Astart%2C%20end%E5%92%8Cstride.md)
 
 
 ### 代码
