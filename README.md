@@ -63,7 +63,15 @@
 - [Python实践61-configparser模块简介](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B561-configparser%E6%A8%A1%E5%9D%97%E7%AE%80%E4%BB%8B.md)
 - [Python实践62-列表切片知识点1](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B562-%E5%88%97%E8%A1%A8%E5%88%87%E7%89%87%E7%9F%A5%E8%AF%86%E7%82%B91.md)
 - [Python实践63-为什么不建议切片时同时指定start, end和stride](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B563-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%BB%BA%E8%AE%AE%E5%88%87%E7%89%87%E6%97%B6%E5%90%8C%E6%97%B6%E6%8C%87%E5%AE%9Astart%2C%20end%E5%92%8Cstride.md)
-
+- [Python实践64-设计并开发链家网爬虫1](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B564-%E8%AE%BE%E8%AE%A1%E5%B9%B6%E5%BC%80%E5%8F%91%E9%93%BE%E5%AE%B6%E7%BD%91%E7%88%AC%E8%99%AB1.md)
+- [Python实践65-同时支持Python2和Python3](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B565-%E5%90%8C%E6%97%B6%E6%94%AF%E6%8C%81Python2%E5%92%8CPython3.md)
+- [Python实践66-设计并开发链家网爬虫2](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B566-%E8%AE%BE%E8%AE%A1%E5%B9%B6%E5%BC%80%E5%8F%91%E9%93%BE%E5%AE%B6%E7%BD%91%E7%88%AC%E8%99%AB2.md)
+- [Python实践67-设计并开发链家网爬虫3](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B567-%E8%AE%BE%E8%AE%A1%E5%B9%B6%E5%BC%80%E5%8F%91%E9%93%BE%E5%AE%B6%E7%BD%91%E7%88%AC%E8%99%AB3.md)
+- [Python实践68-用xlrd读取Excel文件](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B568-%E7%94%A8xlrd%E8%AF%BB%E5%8F%96Excel%E6%96%87%E4%BB%B6.md)
+- [Python实践69-用xlwt写Excel文件](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B569-%E7%94%A8xlwt%E5%86%99Excel%E6%96%87%E4%BB%B6.md)
+- [Python实践70-用xlutils操作Excel](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B570-%E7%94%A8xlutils%E6%93%8D%E4%BD%9CExcel.md)
+- [Python实践71-解决名称冲突的两种方法](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B571-%E8%A7%A3%E5%86%B3%E5%90%8D%E7%A7%B0%E5%86%B2%E7%AA%81%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95.md)
+- [Python实践72-用StringIO在内存中读写字符串](https://github.com/jumper2014/PyCodeComplete/blob/master/docs/Python%E5%AE%9E%E8%B7%B572-%E7%94%A8StringIO%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E8%AF%BB%E5%86%99%E5%AD%97%E7%AC%A6%E4%B8%B2.md)
 
 ### 代码
 - 使用Paramiko远程登录免密码登录的机器：paramiko_with_key.py
