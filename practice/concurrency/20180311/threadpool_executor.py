@@ -23,4 +23,4 @@ if __name__ == '__main__':
         for num, result in zip(range(1, 1001), executor.map(visit_url, urls)):
             print('video ({}) = {}'.format(num, result))
 
-    print 'COST: {}'.format(time.time() - start)
+    print('COST: {}'.format(time.time() - start))
