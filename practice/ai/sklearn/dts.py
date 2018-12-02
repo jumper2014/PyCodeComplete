@@ -21,11 +21,11 @@ if __name__ == "__main__":
     x_train, x_test, y_train, y_test = train_test_split(iris_x, iris_y, test_size=0.3)
 
     # 设置DTs分类器
-    knn = DecisionTreeClassifier()
+    dts = DecisionTreeClassifier()
 
     # 进行训练
-    knn.fit(x_train, y_train)
+    dts.fit(x_train, y_train)
 
-    # 使用训练好的knn进行数据预测
-    print(knn.predict(x_test))
+    # 使用训练好的DTs进行数据预测
+    print(dts.predict(x_test))
     print(y_test)
