@@ -1,0 +1,19 @@
+{ "student": {
+  "stid": "10213",
+  "info": {
+   "name": "name",
+   "mail": "xxx@xxx.com",
+   "sex": "male"
+  },
+  "course": [
+   {
+    "name": "math",
+    "score": "90"
+   },
+   {
+    "name": "english",
+    "score": "881"
+   }
+  ]
+ }
+}
