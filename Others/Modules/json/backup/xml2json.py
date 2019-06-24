@@ -23,23 +23,24 @@ def xml_to_json(xml_path):
     return json_str
 
 
-def json_to_xml(jsonstr):
+def json_to_xml():
     """
         demo Python conversion between xml and json
     """
     jsonstr = {"student": {'course': {'name': 'math', 'score': '90'},
                         'info': {'sex': 'male', 'name': 'name'}, 'stid': '10213'}}
     convertedXml = xmltodict.unparse(jsonstr)
+    print(type(convertedXml))
     print("convertedXml=", convertedXml)
 
 
 if __name__ == "__main__":
-    json_str = xml_to_json("xml_input.xml")
-    json_real = json.loads(json_str)
-    print(json_real)
-    json_file = open("json_expected.json", 'r')
-    json_expected = json.load(json_file)
-    print(json_expected)
-    result = json_tools.diff(json_real, json_expected)
-    print(result)
-    # json_to_xml(json_str)
+    # json_str = xml_to_json("xml_input.xml")
+    # json_real = json.loads(json_str)
+    # print(json_real)
+    # json_file = open("json_expected.json", 'r')
+    # json_expected = json.load(json_file)
+    # print(json_expected)
+    # result = json_tools.diff(json_real, json_expected)
+    # print(result)
+    json_to_xml()

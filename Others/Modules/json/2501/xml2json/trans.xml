@@ -1,0 +1,14 @@
+<student>
+    <stid>10213</stid>
+    <info>
+        <sex>male</sex>
+    </info>
+    <course>
+        <name>math</name>
+        <score>90</score>
+    </course>
+    <course>
+        <name>english</name>
+        <score>881</score>
+    </course>
+</student>
