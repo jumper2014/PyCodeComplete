@@ -2,7 +2,8 @@
 # coding=utf-8
 # author: zengyuetian
 # 单独一个目录，目录命名就是接口名称，例如2501
-#
+# python xml_json_checker.py -a 2501 -d json2xml
+# python xml_json_checker.py -a 2501 -d xml2json
 
 
 import xml.etree.ElementTree as ET
