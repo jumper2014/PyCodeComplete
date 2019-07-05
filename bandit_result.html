@@ -1,0 +1,1683 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+    Bandit Report
+</title>
+
+<style>
+
+html * {
+    font-family: "Arial", sans-serif;
+}
+
+pre {
+    font-family: "Monaco", monospace;
+}
+
+.bordered-box {
+    border: 1px solid black;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    padding-left:1em;
+}
+
+.metrics-box {
+    font-size: 1.1em;
+    line-height: 130%;
+}
+
+.metrics-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: .25em;
+}
+
+.issue-description {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.candidate-issues {
+    margin-left: 2em;
+    border-left: solid 1px; LightGray;
+    padding-left: 5%;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+
+.issue-block {
+    border: 1px solid LightGray;
+    padding-left: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+}
+
+.issue-sev-high {
+    background-color: Pink;
+}
+
+.issue-sev-medium {
+    background-color: NavajoWhite;
+}
+
+.issue-sev-low {
+    background-color: LightCyan;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="metrics">
+    <div class="metrics-box bordered-box">
+        <div class="metrics-title">
+            Metrics:<br>
+        </div>
+        Total lines of code: <span id="loc">7497</span><br>
+        Total lines skipped (#nosec): <span id="nosec">0</span>
+    </div>
+</div>
+
+
+
+<br>
+<div id="skipped">
+<div class="bordered-box">
+<b>Skipped files:</b><br><br>
+./Others/Application/Appium/android_contacts.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/MTS/Request.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/MTS/Scheduler.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/MTS/SimpleDB.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/MTS/test/string_test.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/MTS/web_server.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/microblog/db_downgrade.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/microblog/db_migrate.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/microblog/db_upgrade.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/name_stat/film_name_stat.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/name_stat/named_stat.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/parallel_doing/main.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/parallel_doing/setting_parallel.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/project_analysis/Library_analysis.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/project_analysis/function_analysis.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/project_analysis/keyword_analysis.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/project_analysis/log_lines_length.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/project_analysis/short_log_query.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/understand_python/defaultdict_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/understand_python/json/dump_load.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/understand_python/json/dumps_loads.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/understand_python/system_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Application/understand_python/system_test.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/basestring_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/bytearray_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/call_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/callable_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/compile_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/complex_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/delattr_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/divmod_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/eval_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/generator/zrange.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/id_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/iterator/__iter__iterator.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/iterator/myrange.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/iterator/zrange.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Builtin/meta_class/upper_meta_class.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/all_are_class.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/all_function.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/class_method.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/get_set_attr.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/getattribute.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/new_function.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/property1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/property2.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/return_class.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/static_method.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/str_and_repr.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/super/super_init1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/super/super_init2.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/super/super_method.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/vars_of_class_instance1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/vars_of_class_instance2.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Classes/vars_of_class_instance3.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/fork.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/gevent/gevent1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/gevent/gevent2.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/multiprocessing/multi_processing.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/multiprocessing/pool_example.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/multiprocessing/process_communication.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/subprocess_call.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/threading/ThreadLocal.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/threading/threading_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/threading/threading_timer_cancel.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/threading/threading_timer_start.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Concurrency/threadpool/threadpool_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/DesignPatterns/const/const.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/DesignPatterns/const/const_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Dicts/hashlib_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Lists/connect_list.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Lists/reverse_word.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Lists/sort_sorted.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Lists/update_list.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Lists/zip_sample1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Lists/zip_sample2.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/ML/linear_module.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/BDD/lettuce/tests/features/steps.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/avro/avro_access.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/base64/base64_padding.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/base64/base64_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/collections/deque_example.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/commands/commands_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/cookie/cookie_from_txt.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/cookie/cookie_items.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/cookie/cookie_login.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/ctypes/call_so.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/database/pymongo/mongo_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/database/redis/redis_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/decimal/decimal_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/file/with.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/help_doc_print.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/kafka/access_kafka.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/networking/BaseHTTPServer/HTTPServerDemo.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/networking/SimpleHTTPServer/simple_http_server.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/networking/SimpleHTTPServer/simple_http_server_local_only.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/networking/beautiful_soup/html_content.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/networking/dpkt/print_udp_requests.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/networking/ftplib/ftplib_1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/networking/paramiko/paramiko_remote_exec.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/networking/pcap/livecap.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/networking/requests/requests_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/networking/urllib/urllib_test.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/numpy/bool_array_index.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/numpy/create.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/numpy/index_slicing.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/numpy/int_index.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/numpy/int_index_element.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/numpy/shape.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/numpy/slicing.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/openpyxl/openpyxl_read.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/openpyxl/openpyxl_write.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/optparse/optparse_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/pandas/csv_read_1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/re/re_search.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/socket/socket_client.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/socket/socket_server.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/socket/udp_client.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/socket/udp_server.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/struct/struct_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/sysconfig_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/tarfile/tar_file.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/time/date/date_string.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/time/date/last_friday.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/unittest/unittest_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/xml/etree_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Modules/yaml/read_yaml.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Questions/3bit_number.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Questions/multiply_table.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Questions/reduce_number.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Strings/capwords.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Strings/input_and_raw_input.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Strings/is_a_digital.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Strings/is_a_string.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Strings/ord_chr.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Strings/string_format.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Strings/string_template.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Strings/stringio_and_cstringio.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Strings/ys_string.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/Tuple/tuple_test.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/bkm/file/get_line_1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/bkm/file/get_line_2.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/bkm/file/get_line_count_1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/bkm/file/get_line_count_2.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/bkm/get_host_name.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/bkm/global_var.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/bkm/is_digit.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/bkm/skill/__doc__sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/bkm/skill/filter_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/bkm/split_list_to_chunk.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/block_chain/pow.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/collection/2d_array_exchange.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/collection/counter/counter_access_count.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/collection/counter/counter_init.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/collection/dict/dict_viewitems.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/collection/heapq/min_max.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/decorator/decorator_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/decorator/singleton_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/decorator/understand_decorator1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/decorator/understand_decorator2.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/puzzle/class_static_var.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/puzzle/default_list_param.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/puzzle/defaultdict_tree.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/copy/copy_1.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/copy/copy_2.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/difflib_data.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/file/dir_delete.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/file/file_archive.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/file/file_copy.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/file/infile_replace.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/io/pprint_data.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/random_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/sys/platform_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/sys/sys_args.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/time/clock_time.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/time/date_data.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/time/time_data.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/standard/time/time_instance.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/builtin/dir_function.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/builtin/eq_function.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/collection/merge_lists.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/collection/named_slice.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/collection/set_duplicate_intersection_difference.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/collection/zip_reverse_dict.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/except/user_defined_exception.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/except/user_named_exception_class.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/func/apply_func.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/func/func_return_func.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/func/func_return_lambda.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/func/higher_order_function.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/func/pass_func_as_param2.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/loop/break_out_of_nested_loops.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/dict_get.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/dynamic_class.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/exec_eval.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/generator_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/if_else.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/list_and_generator.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/list_dict_set_comprehension.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/list_in_class.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/range_vs_xrange.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/reduce_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/repr_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/swap_variables.py <b>reason:</b> syntax error while parsing AST from file<br>./Others/syntax/other/underscore.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/application/blockchain/simple_block_chain.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/class/20180123/file_sha1.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/iterator/20180115/adult_iterator.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/lib/future/20180128/p2_unicode.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/lib/future/20180128/p3_unicode.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/lib/paramiko_with_key.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/profile/pypy/pypy_sample.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/spider/20180121/create_tag_cloud.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/syntax/switch_case/20180308/switch_with_lambda.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/type/20180204/false_value.py <b>reason:</b> syntax error while parsing AST from file<br>./practice/unicode/20180115/ide_encoding.py <b>reason:</b> syntax error while parsing AST from file<br>
+</div>
+</div>
+
+
+<br>
+<div id="results">
+    
+<div id="issue-0">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Standard pseudo-random generators are not suitable for security/cryptographic purposes.<br>
+    <b>Test ID:</b> B311<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Application/Appium/ios_complex.py" target="_blank">./Others/Application/Appium/ios_complex.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random</a><br>
+
+<div class="code">
+<pre>
+17	def str_generator(size=6, chars=string.ascii_uppercase + string.digits):
+18	    return &#x27;&#x27;.join(random.choice(chars) for x in range(size))
+19	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-1">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.<br>
+    <b>Test ID:</b> B310<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Application/Appium/ios_complex.py" target="_blank">./Others/Application/Appium/ios_complex.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen</a><br>
+
+<div class="code">
+<pre>
+157	    def test_sessions(self):
+158	        data = json.loads(urllib2.urlopen(&quot;http://localhost:4723/wd/hub/sessions&quot;).read())
+159	        self.assertEqual(self.driver.session_id, data[&#x27;sessionId&#x27;])
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-2">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Standard pseudo-random generators are not suitable for security/cryptographic purposes.<br>
+    <b>Test ID:</b> B311<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Application/Appium/ios_sauce.py" target="_blank">./Others/Application/Appium/ios_sauce.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random</a><br>
+
+<div class="code">
+<pre>
+27	        for i in range(2):
+28	            rnd = randint(0, 10)
+29	            els[i].send_keys(rnd)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-3">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Standard pseudo-random generators are not suitable for security/cryptographic purposes.<br>
+    <b>Test ID:</b> B311<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Application/Appium/ios_simple.py" target="_blank">./Others/Application/Appium/ios_simple.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random</a><br>
+
+<div class="code">
+<pre>
+33	        for i in range(2):
+34	            rnd = randint(0, 10)
+35	            els[i].send_keys(rnd)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-4">
+<div class="issue-block issue-sev-low">
+    <b>try_except_pass: </b> Try, Except, Pass detected.<br>
+    <b>Test ID:</b> B110<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Application/Appium/ios_simple.py" target="_blank">./Others/Application/Appium/ios_simple.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b110_try_except_pass.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b110_try_except_pass.html</a><br>
+
+<div class="code">
+<pre>
+58	            sleep(1)
+59	        except:
+60	            pass
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-5">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_string: </b> Possible hardcoded password: 'you-will-never-guess'<br>
+    <b>Test ID:</b> B105<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Application/microblog/config.py" target="_blank">./Others/Application/microblog/config.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html</a><br>
+
+<div class="code">
+<pre>
+10	CSRT_ENABLE = True # 激活 跨站点请求伪造 保护
+11	SECRET_KEY = &#x27;you-will-never-guess&#x27;
+12	
+13	CSRF_ENABLED = True
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-6">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_string: </b> Possible hardcoded password: 'you-will-never-guess'<br>
+    <b>Test ID:</b> B105<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Application/microblog/config.py" target="_blank">./Others/Application/microblog/config.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html</a><br>
+
+<div class="code">
+<pre>
+13	CSRF_ENABLED = True
+14	SECRET_KEY = &#x27;you-will-never-guess&#x27;
+15	
+16	OPENID_PROVIDERS = [
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-7">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Consider possible security implications associated with subprocess module.<br>
+    <b>Test ID:</b> B404<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Application/understand_python/subprocess1.py" target="_blank">./Others/Application/understand_python/subprocess1.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess</a><br>
+
+<div class="code">
+<pre>
+3	
+4	import subprocess
+5	
+6	# Popen启动进程
+7	proc = subprocess.Popen([&#x27;echo&#x27;, &#x27;hello from the child&#x27;], stdout=subprocess.PIPE)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-8">
+<div class="issue-block issue-sev-low">
+    <b>start_process_with_partial_path: </b> Starting a process with a partial executable path<br>
+    <b>Test ID:</b> B607<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Application/understand_python/subprocess1.py" target="_blank">./Others/Application/understand_python/subprocess1.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html</a><br>
+
+<div class="code">
+<pre>
+6	# Popen启动进程
+7	proc = subprocess.Popen([&#x27;echo&#x27;, &#x27;hello from the child&#x27;], stdout=subprocess.PIPE)
+8	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-9">
+<div class="issue-block issue-sev-low">
+    <b>subprocess_without_shell_equals_true: </b> subprocess call - check for execution of untrusted input.<br>
+    <b>Test ID:</b> B603<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Application/understand_python/subprocess1.py" target="_blank">./Others/Application/understand_python/subprocess1.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html</a><br>
+
+<div class="code">
+<pre>
+6	# Popen启动进程
+7	proc = subprocess.Popen([&#x27;echo&#x27;, &#x27;hello from the child&#x27;], stdout=subprocess.PIPE)
+8	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-10">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.<br>
+    <b>Test ID:</b> B310<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Concurrency/gevent/gevent3.py" target="_blank">./Others/Concurrency/gevent/gevent3.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen</a><br>
+
+<div class="code">
+<pre>
+11	    print(&#x27;GET: %s&#x27; % url)
+12	    resp = urllib2.urlopen(url)
+13	    data = resp.read()
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-11">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Standard pseudo-random generators are not suitable for security/cryptographic purposes.<br>
+    <b>Test ID:</b> B311<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/DesignPatterns/abstract_factory.py" target="_blank">./Others/DesignPatterns/abstract_factory.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random</a><br>
+
+<div class="code">
+<pre>
+73	    &quot;&quot;&quot;Let&#x27;s be dynamic!&quot;&quot;&quot;
+74	    return random.choice([DogFactory, CatFactory])()
+75	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-12">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/InterviewQuestions/Offer/65_plus_with_bit_operation.py" target="_blank">./Others/InterviewQuestions/Offer/65_plus_with_bit_operation.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+13	if __name__ == &quot;__main__&quot;:
+14	    assert add(123, 798) == 921
+15	    assert add(111, 666) == 777
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-13">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/InterviewQuestions/Offer/65_plus_with_bit_operation.py" target="_blank">./Others/InterviewQuestions/Offer/65_plus_with_bit_operation.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+14	    assert add(123, 798) == 921
+15	    assert add(111, 666) == 777
+16	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-14">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Use of insecure MD2, MD4, MD5, or SHA1 hash function.<br>
+    <b>Test ID:</b> B303<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Modules/code/md5/hashlib_md5_string.py" target="_blank">./Others/Modules/code/md5/hashlib_md5_string.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b303-md5" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b303-md5</a><br>
+
+<div class="code">
+<pre>
+3	src = &#x27;http://flv.srs.cloutropy.com/wasu/time1.flv&#x27;
+4	m2 = hashlib.md5()
+5	m2.update(src)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-15">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_funcarg: </b> Possible hardcoded password: 'password'<br>
+    <b>Test ID:</b> B106<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/envelopes/envelopes1.py" target="_blank">./Others/Modules/envelopes/envelopes1.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b106_hardcoded_password_funcarg.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b106_hardcoded_password_funcarg.html</a><br>
+
+<div class="code">
+<pre>
+12	# Send the envelope using an ad-hoc connection...
+13	envelope.send(&#x27;smtp.googlemail.com&#x27;, login=&#x27;from@example.com&#x27;,
+14	              password=&#x27;password&#x27;, tls=True)
+15	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-16">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Using xml.etree.ElementTree to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.etree.ElementTree with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.<br>
+    <b>Test ID:</b> B405<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Modules/json/backup/xpath_test.py" target="_blank">./Others/Modules/json/backup/xpath_test.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b405-import-xml-etree" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b405-import-xml-etree</a><br>
+
+<div class="code">
+<pre>
+5	
+6	import xml.etree.ElementTree as ET
+7	
+8	f = open(&#x27;keys.ini&#x27;, &#x27;r&#x27;)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-17">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Using xml.etree.ElementTree.parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.etree.ElementTree.parse with its defusedxml equivalent function or make sure defusedxml.defuse_stdlib() is called<br>
+    <b>Test ID:</b> B314<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Modules/json/backup/xpath_test.py" target="_blank">./Others/Modules/json/backup/xpath_test.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b313-b320-xml-bad-elementtree" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b313-b320-xml-bad-elementtree</a><br>
+
+<div class="code">
+<pre>
+10	
+11	tree = ET.parse(&#x27;xml_input.xml&#x27;)
+12	root = tree.getroot()
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-18">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Using xml.etree.ElementTree to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.etree.ElementTree with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.<br>
+    <b>Test ID:</b> B405<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Modules/json/xml_json_checker.py" target="_blank">./Others/Modules/json/xml_json_checker.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b405-import-xml-etree" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b405-import-xml-etree</a><br>
+
+<div class="code">
+<pre>
+10	
+11	import xml.etree.ElementTree as ET
+12	import xmltodict
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-19">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Using xml.etree.ElementTree.parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.etree.ElementTree.parse with its defusedxml equivalent function or make sure defusedxml.defuse_stdlib() is called<br>
+    <b>Test ID:</b> B314<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Modules/json/xml_json_checker.py" target="_blank">./Others/Modules/json/xml_json_checker.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b313-b320-xml-bad-elementtree" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b313-b320-xml-bad-elementtree</a><br>
+
+<div class="code">
+<pre>
+38	
+39	        tree = ET.parse(xml_file)
+40	        root = tree.getroot()
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-20">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_string: </b> Possible hardcoded password: '***'<br>
+    <b>Test ID:</b> B105<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/networking/email/send_attached_mail.py" target="_blank">./Others/Modules/networking/email/send_attached_mail.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html</a><br>
+
+<div class="code">
+<pre>
+11	username = &#x27;***&#x27;
+12	password = &#x27;***&#x27;
+13	
+14	msgRoot = MIMEMultipart(&#x27;mixed&#x27;)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-21">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_string: </b> Possible hardcoded password: '***'<br>
+    <b>Test ID:</b> B105<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/networking/email/send_html_mail.py" target="_blank">./Others/Modules/networking/email/send_html_mail.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html</a><br>
+
+<div class="code">
+<pre>
+10	username = &#x27;***&#x27;
+11	password = &#x27;***&#x27;
+12	
+13	msg = MIMEText(
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-22">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_string: </b> Possible hardcoded password: '***'<br>
+    <b>Test ID:</b> B105<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/networking/email/send_image_mail.py" target="_blank">./Others/Modules/networking/email/send_image_mail.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html</a><br>
+
+<div class="code">
+<pre>
+12	username = &#x27;***&#x27;
+13	password = &#x27;***&#x27;
+14	
+15	msgRoot = MIMEMultipart(&#x27;related&#x27;)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-23">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_string: </b> Possible hardcoded password: '***'<br>
+    <b>Test ID:</b> B105<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/networking/email/send_mixed_mail.py" target="_blank">./Others/Modules/networking/email/send_mixed_mail.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html</a><br>
+
+<div class="code">
+<pre>
+11	username = &#x27;***&#x27;
+12	password = &#x27;***&#x27;
+13	
+14	# Create message container - the correct MIME type is multipart/alternative.
+15	msg = MIMEMultipart(&#x27;mixed&#x27;)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-24">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_string: </b> Possible hardcoded password: '***'<br>
+    <b>Test ID:</b> B105<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/networking/email/send_plain_mail.py" target="_blank">./Others/Modules/networking/email/send_plain_mail.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html</a><br>
+
+<div class="code">
+<pre>
+11	username = &#x27;***&#x27;
+12	password = &#x27;***&#x27;
+13	
+14	msg = MIMEText(u&#x27;你好&#x27;, &#x27;plain&#x27;, &#x27;utf-8&#x27;)  # 中文需参数‘utf-8&#x27;，单字节字符不需要
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-25">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_string: </b> Possible hardcoded password: '***'<br>
+    <b>Test ID:</b> B105<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/networking/email/send_to_many.py" target="_blank">./Others/Modules/networking/email/send_to_many.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html</a><br>
+
+<div class="code">
+<pre>
+9	username = &#x27;***&#x27;
+10	password = &#x27;***&#x27;
+11	
+12	msg = MIMEText(&#x27;你好&#x27;, &#x27;plain&#x27;, &#x27;utf-8&#x27;)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-26">
+<div class="issue-block issue-sev-high">
+    <b>blacklist: </b> A FTP-related module is being imported.  FTP is considered insecure. Use SSH/SFTP/SCP or some other encrypted protocol.<br>
+    <b>Test ID:</b> B402<br>
+    <b>Severity: </b>HIGH<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Modules/networking/ftplib/ftplib-2.py" target="_blank">./Others/Modules/networking/ftplib/ftplib-2.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b402-import-ftplib" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b402-import-ftplib</a><br>
+
+<div class="code">
+<pre>
+2	
+3	import ftplib
+4	import sys
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-27">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_funcarg: </b> Possible hardcoded password: '123456'<br>
+    <b>Test ID:</b> B106<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/networking/paramiko/paramiko_download_file.py" target="_blank">./Others/Modules/networking/paramiko/paramiko_download_file.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b106_hardcoded_password_funcarg.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b106_hardcoded_password_funcarg.html</a><br>
+
+<div class="code">
+<pre>
+6	t = paramiko.Transport((&quot;192.168.1.211&quot;, 22))
+7	t.connect(username=&quot;admin&quot;, password=&quot;123456&quot;)
+8	sftp = paramiko.SFTPClient.from_transport(t)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-28">
+<div class="issue-block issue-sev-medium">
+    <b>hardcoded_tmp_directory: </b> Probable insecure usage of temp file/directory.<br>
+    <b>Test ID:</b> B108<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/networking/paramiko/paramiko_download_file.py" target="_blank">./Others/Modules/networking/paramiko/paramiko_download_file.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b108_hardcoded_tmp_directory.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b108_hardcoded_tmp_directory.html</a><br>
+
+<div class="code">
+<pre>
+8	sftp = paramiko.SFTPClient.from_transport(t)
+9	remotepath = &#x27;/tmp/test.txt&#x27;
+10	localpath = &#x27;E:/test.txt&#x27;
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-29">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_funcarg: </b> Possible hardcoded password: '123456'<br>
+    <b>Test ID:</b> B106<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/networking/paramiko/paramiko_upload_file.py" target="_blank">./Others/Modules/networking/paramiko/paramiko_upload_file.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b106_hardcoded_password_funcarg.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b106_hardcoded_password_funcarg.html</a><br>
+
+<div class="code">
+<pre>
+6	t = paramiko.Transport((&quot;192.168.1.211&quot;, 22))
+7	t.connect(username=&quot;admin&quot;, password=&quot;123456&quot;)
+8	sftp = paramiko.SFTPClient.from_transport(t)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-30">
+<div class="issue-block issue-sev-medium">
+    <b>hardcoded_tmp_directory: </b> Probable insecure usage of temp file/directory.<br>
+    <b>Test ID:</b> B108<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/Modules/networking/paramiko/paramiko_upload_file.py" target="_blank">./Others/Modules/networking/paramiko/paramiko_upload_file.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b108_hardcoded_tmp_directory.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b108_hardcoded_tmp_directory.html</a><br>
+
+<div class="code">
+<pre>
+8	sftp = paramiko.SFTPClient.from_transport(t)
+9	remotepath = &#x27;/tmp/test.txt&#x27;
+10	localpath = &#x27;D:/test.txt&#x27;
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-31">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Using xml.dom.minidom to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.dom.minidom with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.<br>
+    <b>Test ID:</b> B408<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Modules/xml/create_xml.py" target="_blank">./Others/Modules/xml/create_xml.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b408-import-xml-minidom" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b408-import-xml-minidom</a><br>
+
+<div class="code">
+<pre>
+2	
+3	import xml.dom.minidom
+4	
+5	# 在内存中创建一个空的文档
+6	doc = xml.dom.minidom.Document()
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-32">
+<div class="issue-block issue-sev-low">
+    <b>try_except_pass: </b> Try, Except, Pass detected.<br>
+    <b>Test ID:</b> B110<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/Strings/find_in_index.py" target="_blank">./Others/Strings/find_in_index.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b110_try_except_pass.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b110_try_except_pass.html</a><br>
+
+<div class="code">
+<pre>
+16	        print(&#x27;find&#x27;)
+17	except:
+18	        pass
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-33">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/collection/dict/sort_dict.py" target="_blank">./Others/collection/dict/sort_dict.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+8	print(sorted_x)
+9	assert sorted_x == [(0, 0), (1, 2), (2, 1), (3, 4), (4, 3)]
+10	
+11	# 下面是另一种方法
+12	# sorted_x是一个元组列表,用每个元组的第2个元素排序
+13	sorted_x = sorted(x.items(), key=lambda x: x[1])
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-34">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/collection/dict/sort_dict.py" target="_blank">./Others/collection/dict/sort_dict.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+14	print(sorted_x)
+15	assert sorted_x == [(0, 0), (2, 1), (1, 2), (4, 3), (3, 4)]
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-35">
+<div class="issue-block issue-sev-medium">
+    <b>hardcoded_bind_all_interfaces: </b> Possible binding to all interfaces.<br>
+    <b>Test ID:</b> B104<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./Others/mock.py" target="_blank">./Others/mock.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b104_hardcoded_bind_all_interfaces.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b104_hardcoded_bind_all_interfaces.html</a><br>
+
+<div class="code">
+<pre>
+19	
+20	    app.run(host=&#x27;0.0.0.0&#x27;, port=8080)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-36">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./Others/syntax/other/list_copy.py" target="_blank">./Others/syntax/other/list_copy.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+5	b = a[:]
+6	assert b == a and b is not a
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-37">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.<br>
+    <b>Test ID:</b> B310<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/concurrency/thread_sample.py" target="_blank">./practice/concurrency/thread_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen</a><br>
+
+<div class="code">
+<pre>
+10	def visit_url(url):
+11	    response = request.urlopen(url)
+12	    page = response.read()
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-38">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.<br>
+    <b>Test ID:</b> B310<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/concurrency/threadpool_sample.py" target="_blank">./practice/concurrency/threadpool_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen</a><br>
+
+<div class="code">
+<pre>
+10	def visit_url(url):
+11	    response = urllib2.urlopen(url)
+12	    page = response.read()
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-39">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/func/reduce_sample.py" target="_blank">./practice/func/reduce_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+8	    sum_result = reduce(lambda x, y: x+y, range(1, 10))
+9	    assert(sum_result == 45)
+10	    print(sum_result)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-40">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/func/reduce_sample.py" target="_blank">./practice/func/reduce_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+13	    factorial_result = reduce(lambda x, y: x * y, range(1, 10))
+14	    assert(factorial_result == 362880)
+15	    print(factorial_result)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-41">
+<div class="issue-block issue-sev-low">
+    <b>hardcoded_password_funcarg: </b> Possible hardcoded password: 'user1password'<br>
+    <b>Test ID:</b> B106<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./practice/lib/mail/yagmail_sample.py" target="_blank">./practice/lib/mail/yagmail_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b106_hardcoded_password_funcarg.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b106_hardcoded_password_funcarg.html</a><br>
+
+<div class="code">
+<pre>
+7	if __name__ == &#x27;__main__&#x27;:
+8	    yag = yagmail.SMTP(user=&quot;user1@163.com&quot;, password=&quot;user1password&quot;, host=&#x27;smtp.163.com&#x27;)
+9	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-42">
+<div class="issue-block issue-sev-medium">
+    <b>hardcoded_tmp_directory: </b> Probable insecure usage of temp file/directory.<br>
+    <b>Test ID:</b> B108<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>MEDIUM<br>
+    <b>File: </b><a href="./practice/lib/mail/yagmail_sample.py" target="_blank">./practice/lib/mail/yagmail_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b108_hardcoded_tmp_directory.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b108_hardcoded_tmp_directory.html</a><br>
+
+<div class="code">
+<pre>
+10	    contents = [&#x27;This is the body, and here is just text https://zhuanlan.zhihu.com/python2018&#x27;,
+11	                &#x27;You can find an file attached.&#x27;, &#x27;/tmp/sample.png&#x27;]
+12	
+13	    yag.send(to=&#x27;user2@hotmail.com&#x27;,
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-43">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Deserialization with the marshal module is possibly dangerous.<br>
+    <b>Test ID:</b> B302<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/marshal/marshal_sample.py" target="_blank">./practice/lib/marshal/marshal_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b302-marshal" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b302-marshal</a><br>
+
+<div class="code">
+<pre>
+18	    input_file = open(&#x27;marshal.out&#x27;, &#x27;rb&#x27;)
+19	    data1 = marshal.load(input_file)
+20	    data2 = marshal.load(input_file)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-44">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Deserialization with the marshal module is possibly dangerous.<br>
+    <b>Test ID:</b> B302<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/marshal/marshal_sample.py" target="_blank">./practice/lib/marshal/marshal_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b302-marshal" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b302-marshal</a><br>
+
+<div class="code">
+<pre>
+19	    data1 = marshal.load(input_file)
+20	    data2 = marshal.load(input_file)
+21	    print(data1)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-45">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Deserialization with the marshal module is possibly dangerous.<br>
+    <b>Test ID:</b> B302<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/marshal/marshal_sample.py" target="_blank">./practice/lib/marshal/marshal_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b302-marshal" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b302-marshal</a><br>
+
+<div class="code">
+<pre>
+27	    file_data = open(&#x27;out.bin&#x27;, &#x27;rb&#x27;).read()
+28	    real_data = marshal.loads(file_data)
+29	    print(real_data)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-46">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Consider possible security implications associated with pickle module.<br>
+    <b>Test ID:</b> B403<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/pickle/pickle_sample.py" target="_blank">./practice/lib/pickle/pickle_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b403-import-pickle" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b403-import-pickle</a><br>
+
+<div class="code">
+<pre>
+4	
+5	import pickle
+6	
+7	
+8	class User:
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-47">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.<br>
+    <b>Test ID:</b> B301<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/pickle/pickle_sample.py" target="_blank">./practice/lib/pickle/pickle_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b301-pickle" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b301-pickle</a><br>
+
+<div class="code">
+<pre>
+25	f = open(&#x27;user.pkl&#x27;, &#x27;rb&#x27;)
+26	user1 = pickle.load(f)
+27	f.close()
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-48">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Standard pseudo-random generators are not suitable for security/cryptographic purposes.<br>
+    <b>Test ID:</b> B311<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/tenacity_sample/retry_decorator.py" target="_blank">./practice/lib/tenacity_sample/retry_decorator.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random</a><br>
+
+<div class="code">
+<pre>
+8	def do_something_unreliable():
+9	    if random.randint(0, 10) &gt; 1:
+10	        raise IOError(&quot;Unstable status, try again&quot;)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-49">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Standard pseudo-random generators are not suitable for security/cryptographic purposes.<br>
+    <b>Test ID:</b> B311<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/tenacity_sample/try_with_exception.py" target="_blank">./practice/lib/tenacity_sample/try_with_exception.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random</a><br>
+
+<div class="code">
+<pre>
+8	        try:
+9	            if random.randint(0, 10) &gt; 1:
+10	                raise IOError(&quot;Unstable status, try again&quot;)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-50">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/xls/read_xls.py" target="_blank">./practice/lib/xls/read_xls.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+15	    # 打开excel文件并获取所有sheet
+16	    assert(workbook.sheet_names() == [&#x27;users&#x27;, &#x27;Sheet2&#x27;, &#x27;Sheet3&#x27;])
+17	
+18	    # 根据下标获取sheet名称
+19	    sheet1_name = workbook.sheet_names()[0]
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-51">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/xls/read_xls.py" target="_blank">./practice/lib/xls/read_xls.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+19	    sheet1_name = workbook.sheet_names()[0]
+20	    assert(sheet1_name == &#x27;users&#x27;)
+21	
+22	    # 根据sheet索引或者名称获取sheet内容，同时获取sheet名称、行数、列数
+23	    sheet1 = workbook.sheet_by_index(0)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-52">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/xls/read_xls.py" target="_blank">./practice/lib/xls/read_xls.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+23	    sheet1 = workbook.sheet_by_index(0)
+24	    assert (sheet1.name, sheet1.nrows, sheet1.ncols) == (&#x27;users&#x27;, 4, 3)
+25	
+26	    # 根据sheet名获得某行或者某列的值
+27	    sheet1 = workbook.sheet_by_name(&#x27;users&#x27;)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-53">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/xls/read_xls.py" target="_blank">./practice/lib/xls/read_xls.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+29	    col_id = sheet1.col_values(0)
+30	    assert (row1 == [1.0, &#x27;Python&#x27;, 30.0])
+31	    assert (col_id == [&#x27;id&#x27;, 1.0, 2.0, 3.0])
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-54">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/xls/read_xls.py" target="_blank">./practice/lib/xls/read_xls.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+30	    assert (row1 == [1.0, &#x27;Python&#x27;, 30.0])
+31	    assert (col_id == [&#x27;id&#x27;, 1.0, 2.0, 3.0])
+32	
+33	    # 获取指定单元格的内容
+34	    assert(sheet1.cell(1, 0).value == 1)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-55">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/xls/read_xls.py" target="_blank">./practice/lib/xls/read_xls.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+33	    # 获取指定单元格的内容
+34	    assert(sheet1.cell(1, 0).value == 1)
+35	    assert(sheet1.cell(1, 1).value == &#x27;Python&#x27;)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-56">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/xls/read_xls.py" target="_blank">./practice/lib/xls/read_xls.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+34	    assert(sheet1.cell(1, 0).value == 1)
+35	    assert(sheet1.cell(1, 1).value == &#x27;Python&#x27;)
+36	    assert(sheet1.cell(1, 2).value == 30)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-57">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/xls/read_xls.py" target="_blank">./practice/lib/xls/read_xls.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+35	    assert(sheet1.cell(1, 1).value == &#x27;Python&#x27;)
+36	    assert(sheet1.cell(1, 2).value == 30)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-58">
+<div class="issue-block issue-sev-medium">
+    <b>yaml_load: </b> Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider yaml.safe_load().<br>
+    <b>Test ID:</b> B506<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/lib/yaml/20180131/yaml_sample.py" target="_blank">./practice/lib/yaml/20180131/yaml_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b506_yaml_load.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b506_yaml_load.html</a><br>
+
+<div class="code">
+<pre>
+7	    with open(&#x27;father.yml&#x27;) as f:
+8	        content = yaml.load(f)
+9	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-59">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Use of possibly insecure function - consider using safer ast.literal_eval.<br>
+    <b>Test ID:</b> B307<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/module/20180128/eval_globals_locals.py" target="_blank">./practice/module/20180128/eval_globals_locals.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval</a><br>
+
+<div class="code">
+<pre>
+8	z = 7
+9	res0 = eval(&#x27;x+y&#x27;)
+10	# output: 11
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-60">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Use of possibly insecure function - consider using safer ast.literal_eval.<br>
+    <b>Test ID:</b> B307<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/module/20180128/eval_globals_locals.py" target="_blank">./practice/module/20180128/eval_globals_locals.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval</a><br>
+
+<div class="code">
+<pre>
+18	    # 局部名称空间
+19	    res1 = eval(&#x27;x+y&#x27;)
+20	    # output: 3
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-61">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Use of possibly insecure function - consider using safer ast.literal_eval.<br>
+    <b>Test ID:</b> B307<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/module/20180128/eval_globals_locals.py" target="_blank">./practice/module/20180128/eval_globals_locals.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval</a><br>
+
+<div class="code">
+<pre>
+23	    # 全局名称空间
+24	    res2 = eval(&#x27;x+y&#x27;, globals())
+25	    # output: 11
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-62">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Use of possibly insecure function - consider using safer ast.literal_eval.<br>
+    <b>Test ID:</b> B307<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/module/20180128/eval_globals_locals.py" target="_blank">./practice/module/20180128/eval_globals_locals.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval</a><br>
+
+<div class="code">
+<pre>
+28	    # 优先使用局部名称空间
+29	    res3 = eval(&#x27;x+y&#x27;, globals(), locals())
+30	    # output: 13
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-63">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Use of possibly insecure function - consider using safer ast.literal_eval.<br>
+    <b>Test ID:</b> B307<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/module/20180128/eval_globals_locals.py" target="_blank">./practice/module/20180128/eval_globals_locals.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval</a><br>
+
+<div class="code">
+<pre>
+33	    # 优先使用局部名称空间
+34	    res3 = eval(&#x27;x+y&#x27;, globals(), locals())
+35	    # output: 13
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-64">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Use of possibly insecure function - consider using safer ast.literal_eval.<br>
+    <b>Test ID:</b> B307<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/module/20180128/eval_globals_locals.py" target="_blank">./practice/module/20180128/eval_globals_locals.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval</a><br>
+
+<div class="code">
+<pre>
+38	    # 混杂使用名称空间
+39	    res4 = eval(&#x27;x+z&#x27;, globals(), locals())
+40	    # output: 8
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-65">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Use of possibly insecure function - consider using safer ast.literal_eval.<br>
+    <b>Test ID:</b> B307<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/module/20180128/eval_str.py" target="_blank">./practice/module/20180128/eval_str.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval</a><br>
+
+<div class="code">
+<pre>
+9	# &lt;type &#x27;str&#x27;&gt;
+10	b = eval(a)
+11	print(b)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-66">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Use of possibly insecure function - consider using safer ast.literal_eval.<br>
+    <b>Test ID:</b> B307<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/module/20180128/eval_str.py" target="_blank">./practice/module/20180128/eval_str.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval</a><br>
+
+<div class="code">
+<pre>
+20	# &lt;type &#x27;str&#x27;&gt;
+21	b = eval(a)
+22	print(b)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-67">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Use of possibly insecure function - consider using safer ast.literal_eval.<br>
+    <b>Test ID:</b> B307<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/module/20180128/eval_str.py" target="_blank">./practice/module/20180128/eval_str.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval</a><br>
+
+<div class="code">
+<pre>
+31	# &lt;type &#x27;str&#x27;&gt;
+32	b = eval(a)
+33	print(b)
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-68">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Standard pseudo-random generators are not suitable for security/cryptographic purposes.<br>
+    <b>Test ID:</b> B311<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/profile/decorator/fn_timer.py" target="_blank">./practice/profile/decorator/fn_timer.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random</a><br>
+
+<div class="code">
+<pre>
+26	def random_sort(n):
+27	    return sorted([random.random() for i in range(n)])
+28	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-69">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Standard pseudo-random generators are not suitable for security/cryptographic purposes.<br>
+    <b>Test ID:</b> B311<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/profile/timeit/func_timeit.py" target="_blank">./practice/profile/timeit/func_timeit.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random</a><br>
+
+<div class="code">
+<pre>
+9	def random_sort():
+10	    return sorted([random.random() for i in range(2000000)])
+11	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-70">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Standard pseudo-random generators are not suitable for security/cryptographic purposes.<br>
+    <b>Test ID:</b> B311<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/profile/yappi/funcs.py" target="_blank">./practice/profile/yappi/funcs.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random</a><br>
+
+<div class="code">
+<pre>
+5	def consumer_time():
+6	    duration = random.randint(0, 200)
+7	    for i in range(duration):
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-71">
+<div class="issue-block issue-sev-low">
+    <b>blacklist: </b> Standard pseudo-random generators are not suitable for security/cryptographic purposes.<br>
+    <b>Test ID:</b> B311<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/profile/yappi/funcs.py" target="_blank">./practice/profile/yappi/funcs.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b311-random</a><br>
+
+<div class="code">
+<pre>
+9	        for j in range(duration):
+10	            x = 100.94 * 238.487*random.randint(0, 10)
+11	
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-72">
+<div class="issue-block issue-sev-medium">
+    <b>blacklist: </b> Deserialization with the marshal module is possibly dangerous.<br>
+    <b>Test ID:</b> B302<br>
+    <b>Severity: </b>MEDIUM<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/runtime/20180204/read_pyc.py" target="_blank">./practice/runtime/20180204/read_pyc.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b302-marshal" target="_blank">https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b302-marshal</a><br>
+
+<div class="code">
+<pre>
+8	        f.seek(8)
+9	        dis.dis(marshal.load(f))
+</pre>
+</div>
+
+
+</div>
+</div>
+
+<div id="issue-73">
+<div class="issue-block issue-sev-low">
+    <b>assert_used: </b> Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.<br>
+    <b>Test ID:</b> B101<br>
+    <b>Severity: </b>LOW<br>
+    <b>Confidence: </b>HIGH<br>
+    <b>File: </b><a href="./practice/syntax/assert/assert_sample.py" target="_blank">./practice/syntax/assert/assert_sample.py</a> <br>
+    <b>More info: </b><a href="https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html" target="_blank">https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html</a><br>
+
+<div class="code">
+<pre>
+6	def divide(num1, num2):
+7	    assert num2 != 0, &quot;Divisor cannot be zero&quot;
+8	    return num1 / num2
+</pre>
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

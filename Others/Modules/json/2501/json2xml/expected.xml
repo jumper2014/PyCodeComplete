@@ -1,10 +1,10 @@
 <student>
     <stid>10213</stid>
     <info>
-        <sex>male</sex>
+        <Sex1>male</Sex1>
     </info>
     <course>
-        <name>math</name>
+        <Name2>math</Name2>
         <score>90</score>
     </course>
     <course>

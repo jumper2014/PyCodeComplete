@@ -15,6 +15,14 @@ import json_tools
 import optparse
 
 
+key_map = {
+    "Name2": "name",
+    "Sex1": "sex",
+    "name1": "name",
+}
+
+
+
 class XmlJsonChecker(object):
     def __init__(self, api, direction):
         self.in_format, self.out_format = direction.split('2')
@@ -83,6 +91,11 @@ class XmlJsonChecker(object):
         """
         f = open(self.trans, 'r')
         xml_str = f.read()
+
+        for k, v in key_map.items():
+            xml_str = xml_str.replace('<{0}>'.format(k), "<{0}>".format(v))
+            xml_str = xml_str.replace('</{0}>'.format(k), "</{0}>".format(v))
+
         converted_dict = xmltodict.parse(xml_str)
         self.real = json.dumps(converted_dict, indent=1)
         self.real = json.loads(self.real)
@@ -99,6 +112,11 @@ class XmlJsonChecker(object):
         else:
             f = open(self.expected_file, 'r')
             xml_str = f.read()
+
+            for k, v in key_map.items():
+                xml_str= xml_str.replace('<{0}>'.format(k), "<{0}>".format(v))
+                xml_str = xml_str.replace('</{0}>'.format(k), "</{0}>".format(v))
+
             converted_dict = xmltodict.parse(xml_str)
             self.expected = json.dumps(converted_dict, indent=1)
             self.expected = json.loads(self.expected)
